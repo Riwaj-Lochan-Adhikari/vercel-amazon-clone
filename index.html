@@ -1,0 +1,324 @@
+<!-- ifa divs of a parent are casuing problem then delte all the children immediatly -->
+<!-- Panic is why you cant debug -->
+<!-- lesson is to use % carefully and try to avoid it -->
+<!-- ctrl + f is for searching text -->
+<!-- always make layout first add text and images at last most important -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="navbar">
+            <!-- al(p) is for amazon logo(parent) -->
+           <div id="al_p" class="navbar1"><div id="al"></div></div>
+           <!-- l is for location -->
+           <div id="l" class="navbar1"></div>   
+           <!-- deliver to india -->
+           <div id="dti" class="navbar1"><p id="disco" class="disco">Deliver to</p> <p id="ind" class="ind">India</p></div>
+      
+            <div id="search-nav_parent" class="navbar1">
+                
+                 <!--na is for new all nai is for new all icon -->
+                <div id="all_parent"><div id="na">All</div> <div id="nai"> <select id="nai_c" class="nai_c">
+                    <option selected="selected">All</option>
+                    <option>Arts &amp; Crafts</option>
+                    <option>Automotive</option>
+                    <option>Baby</option>
+                    <option>Beauty &amp; Personal Care</option>
+                    <option>Books</option>
+                    <option>Boys' Fashion</option>
+                    <option>Computers</option>
+                    <option>Deals</option>
+                    <option>Digital Music</option>
+                    <option>Electronics</option>
+                    <option>Girls' Fashion</option>
+                    <option>Health &amp; Household</option>
+                    <option>Home &amp; Kitchen</option>
+                    <option>Industrial &amp; Scientific</option>
+                    <option>Kindle Store</option>
+                    <option>Luggage</option>
+                    <option>Men's Fashion</option>
+                    <option>Movies &amp; TV</option>
+                    <option>Music, CDs &amp; Vinyl</option>
+                    <option>Pet Supplies</option>
+                    <option>Prime Video</option>
+                    <option>Software</option>
+                    <option>Sports &amp; Outdoors</option>
+                    <option>Tools &amp; Home Improvement</option>
+                    <option>Toys &amp; Games</option>
+                    <option>Video Games</option>
+                    <option>Women's Fashion</option>
+                </select></div>
+                </div>
+                <div id="search-nav"><input type="text" placeholder="Search Amazon"></div>
+                <!-- m for magnifying m for magnifying image -->
+                <div id="m"><div id="m1"></div></div>
+            </div>
+            <!-- la is for language lap for la photo lat for la text-->
+            <div id="la"><div id="lap"></div><div id="lat">EN <select id="lats" class="nai_c lats"  ></select></div></div>
+           <!-- account,recturn,cart -->
+            <!-- h1 stands for hello 1 h2 foe hello two.... -->
+            <div id="hello" class="hello"><p id="h1" class="disco h1">Hello, sign in</p><p id="h2" class="ind h2">Accounts & Lists</p><select class="nai_c lats" id="h3"></select></div>
+            <div id="re"><p id="re1" class="disco">Returns</p><p id="re2" class="ind">& Orders</p></div>
+            <!-- ca for cart. 1 and 2 blah blah -->
+            <div id="ca"> <div id="ca1"></div><div id="ca2" class="ind h2">Cart</div></div>
+        </div>
+
+        <div id="navbar2">
+            <div id="All_parent" class="navbar2">
+                <div id="All_image"></div>
+                <div id="All_text">All</div>
+            </div>
+            <div id="Deals" class="navbar2">Today's Deals</div>
+            <div id="Prime" class="navbar2">Prime Video</div>
+            <div id="Registry" class="navbar2">Registry</div>
+            <div id="Gift_Cards" class="navbar2">Gift Cards</div>
+            <div id="Customer_Service" class="navbar2">Customer Service</div>
+            <div id="Sell" class="navbar2">Sell</div>
+        </div>
+        <div id="moving_photo_parent">
+            <div id="moving_photo"></div>
+            <div id="dot_in">You are on amazon.com. You can also shop on Amazon India for millions of products with fast
+                local delivery. <a href="https://www.amazon.in/?ref=aisgw_intl_stripe_in">Click here to go to
+                    amazon.in</a></div>
+
+            <div id="god" class="science">
+                <div id="shop" class="god">
+                    <!-- by class or id you will know what kind of div it is -->
+                    <div id="shop1" class="gtext1">Shop gifts by price</div> <!-- g for god -->
+                    <div id="gparent1" class="up_p"> <!-- p for parent -->
+                  <!-- <a href="">    <div id="gimg1" class="gimg1">   
+                            <div id="u1" class="u1">Under $10</div>
+                        </div> </a>  -->
+                        
+  
+  
+    <div class="gimg1" id="gimg1">  <div id="u1" class="u1">Under $10</div></div>
+
+      
+ <!-- css a {
+  text-decoration: none; /* Remove underline */
+  display: block;        /* Make the whole div clickable */
+}  -->
+                        <!-- u stands for under -->
+
+                        <div id="gimg2" class="gimg2">
+                            <div id="u2" class="u2">Under $25</div>
+                        </div>
+                    </div>
+
+                    <div id="gparent2" class="down_p"> <!-- p for parent -->
+                        <div id="gimg3" class="gimg3">
+                            <div id="u3" class="u3">Under $50</div>
+                        </div>
+                        <div id="gimg4" class="gimg4">
+                            <div id="u4" class="u4">Deals</div>
+                        </div>
+                    </div>
+                    <div id="shop2" class="gtext2"> <a
+                            href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">Discover
+                            more for Holiday</a></div>
+                </div>
+
+
+
+
+                <div id="fashion" class="god"> <!-- by class or id you will know what kind of div it is -->
+                    <div id="fg1" class="gtext1">Fashion trends you like</div> <!-- fg for fashion god -->
+                    <div id="gparent3" class="up_p"> <!-- p for parent -->
+                        <div id="gimg5" class="gimg1">
+                            <div id="u5" class="u1">Dresses</div>
+                        </div>
+                        <!-- u stands for under -->
+
+                        <div id="gimg6" class="gimg2">
+                            <div id="u6" class="u2">Knits</div>
+                        </div>
+                    </div>
+
+                    <div id="gparent4" class="down_p"> <!-- p for parent -->
+                        <div id="gimg7" class="gimg3">
+                            <div id="u7" class="u3">Jacket</div>
+                        </div>
+                        <div id="gimg8" class="gimg4">
+                            <div id="u8" class="u4">Jewelry</div>
+                        </div>
+                    </div>
+                    <div id="fg2" class="gtext2"> <a
+                            href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">Explore more</a></div>
+                </div>
+                <div id="space" class="god"><div id="sp1" class="gtext1">Fashion trends you like</div> <!-- fg for fashion god -->
+                    <div id="gparent5" class="up_p"> <!-- p for parent -->
+                        <div id="gimg9" class="gimg1">
+                            <div id="u9" class="u1">Dining</div>
+                        </div>
+                        <!-- u stands for under -->
+
+                        <div id="gimg10" class="gimg2">
+                            <div id="u10" class="u2">Home</div>
+                        </div>
+                    </div>
+
+                    <div id="gparent6" class="down_p"> <!-- p for parent -->
+                        <div id="gimg11" class="gimg3">
+                            <div id="u11" class="u3">Kitchen</div>
+                        </div>
+                        <div id="gimg12" class="gimg4">
+                            <div id="u12" class="u4">Health and Beauty</div>
+                        </div>
+                    </div>
+                    <div id="sp2" class="gtext2"> <a href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">See more</a></div>
+                </div>
+                     
+                <div id="bigdeal" class="god">       <div id="bd1" class="gtext1">Big deals. Bigger surprises.</div> 
+                        <div id="big1" class="big1"></div>       
+                              <!-- the big1 div is like img_big1 -->
+                    <div id="bd2" class="btext2"> <a href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">Shop black friday deals</a></div>
+            <!-- b for big -->
+                </div>
+                    </div>
+                      
+                      <div id="grand_parent" class="science">
+
+                    <!-- gp is for grand parnent -->
+
+  <div id="gpshop" class="god">
+                    <!-- by class or id you will know what kind of div it is -->
+                    <div id="gpshop1" class="gtext1">Shop gifts by category</div> <!-- g for god -->
+                    <div id="gpparent1" class="up_p"> <!-- p for parent -->
+                        <div id="gpimg1" class="gimg1">
+                            <div id="gpu1" class="u1">Toys</div>
+                        </div>
+                        <!-- u stands for under -->
+
+                        <div id="gpimg2" class="gimg2">
+                            <div id="gpu2" class="u2">Home & kitchen</div>
+                        </div>
+                    </div>
+
+                    <div id="gpparent2" class="down_p"> <!-- p for parent -->
+                        <div id="gpimg3" class="gimg3">
+                            <div id="gpu3" class="u3">Electronics</div>
+                        </div>
+                        <div id="gpimg4" class="gimg4">
+                            <div id="gpu4" class="u4">Sports & outdoors</div>
+                        </div>
+                    </div>
+                    <div id="gpshop2" class="gtext2"> <a
+                            href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">Discover
+                            more for Holiday</a></div>
+                </div>
+
+
+
+
+                <div id="gpfashion" class="god"> <!-- by class or id you will know what kind of div it is -->
+                    <div id="gpfg1" class="gtext1">Save more on deals</div> <!-- fg for fashion god -->
+                    <div id="gpparent3" class="up_p"> <!-- p for parent -->
+                        <div id="gpimg5" class="gimg1">
+                            <div id="gpu5" class="u1">Fashion</div>
+                        </div>
+                        <!-- u stands for under -->
+
+                        <div id="gpimg6" class="gimg2">
+                            <div id="gpu6" class="u2">Toys</div>
+                        </div>
+                    </div>
+
+                    <div id="gpparent4" class="down_p"> <!-- p for parent -->
+                        <div id="gpimg7" class="gimg3">
+                            <div id="gpu7" class="u3">Home & Kitchen</div>
+                        </div>
+                        <div id="gpimg8" class="gimg4">
+                            <div id="gpu8" class="u4">Electronics</div>
+                        </div>
+                    </div>
+                    <div id="gpfg2" class="gtext2"> <a
+                            href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">Discover more Holiday deals</a></div>
+                </div>
+           <div id="gpbigdeal" class="god">       <div id="gpbd1" class="gtext1">Big deals. Bigger surprises.</div> 
+                        <div id="gpbig1" class="big1"></div>       <!-- the gpbig1 div is like gp big img div -->       
+                    <div id="gpbd2" class="btext2"> <a href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">Shop black friday deals</a></div>
+            <!-- b for big -->
+                </div>
+                     
+                <div id="gpbigdeal2" class="god">       <div id="gppbd1" class="gtext1">Get your game on</div> 
+                        <div id="gppbig2" class="big1"></div>             
+                    <div id="gppbd2" class="btext2"> <a href="https://www.amazon.com/blackfriday?_encoding=UTF8&pd_rd_wg=M0A5Z&ref_=pd_hp_d_atf_unk&pd_rd_w=K3QW7&content-id=amzn1.sym.1de72386-12c8-42a9-ba27-a781e38af974&pd_rd_r=f9e5263b-15b5-4041-a9a1-3c7133814134">Explore more</a></div>
+            <!--gpp means grand parent 2 -->
+                </div>
+                    
+
+
+ </div>
+
+                      </div>
+
+           
+        
+    <div class="foot-panel1">Back to Top</div>
+    <div class="foot-panel2">
+        <ul>
+            <p>Get to Know Us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Make Money with Us</p>
+            <a>Sell products on Amazon</a>
+            <a>Sell on Amazon Business</a>
+            <a>Advertise your Products</a>
+            <a>Self-Publish with Us</a>
+            <a>Host an Amazon Hub</a>
+            <a>See More and Make</a>
+        </ul>
+        <ul>
+            <p>Amazon Payment Products</p>
+            <a>Amazon Business Card</a>
+            <a>Shop with Points</a>
+            <a>Reload Your Balance</a>
+            <a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+            <p>Let Us Help You</p>
+            <a>Amazon and Covid-19</a>
+            <a>Your Account</a>
+            <a>Yours Orders</a>
+            <a>Returns & Replacements</a>
+            <a>Amazon Assistant</a>
+            <a>Help</a>
+        </ul>
+    </div>
+    <div class="foot-panel3">
+        <div class="logo"></div>
+        <div class="details">
+   
+        </div>
+    </div>
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Consitions of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">1996-2023, Amazon.com , Inc. or its affiliates</div>
+    </div>
+
+    </div>
+
+</body>
+</html>
